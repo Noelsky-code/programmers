@@ -1,5 +1,10 @@
 import java.util.*;
 
+/*
+linkedlist의 탐색에 n ==> n^2 
+--> arraylist 사용했으면 깔끔했을듯 (탐색 1,이경우 넣는것도 1 ); 
+*/
+
 public class Main {
     public static void main(String[] args) {
          int [] arr = {1,1,3,3,0,1,1};
