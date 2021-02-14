@@ -1,9 +1,11 @@
+
 import java.util.*;
 
-class Solution {
-     static int[] answer;
+public class Main{
+    static int[] answer;
     static int[][] temp;
-    public int[] solution(int n) {
+    public static void main(String[] args){
+        int n=6;
         temp=new int[n+1][];
         int len=0;
         for(int i=1;i<=n;i++){
@@ -20,8 +22,8 @@ class Solution {
                 answer[cnt++]=temp[i][j];
             }
         }
-       // for(int i:answer)System.out.printf("%d ",i);
-        return answer;
+         for(int i:answer)System.out.printf("%d ",i);
+        //return answer;
         
         }
     static void snail(int row,int col,int depth,int num){
@@ -39,11 +41,16 @@ class Solution {
             temp[depth][i]=num++;//오른쪽 이동 
         }
         for(int i=depth-1;i>row;i--){
-            temp[i][i-1]=num++;
+            temp[i][i-col-1]=num++;
         }
         snail(row+2,col+1,depth-1,num);
 
 
     }
-       
+
+
+
+
+
 }
+
