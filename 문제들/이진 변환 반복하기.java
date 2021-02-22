@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args){
         String s= "110010101001";
         int del=0;
+        Integer.MAX_VALUE
         int cnt=0;
         while(!s.equals("1")){
             int before = s.length();
