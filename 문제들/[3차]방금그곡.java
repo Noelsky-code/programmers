@@ -1,4 +1,7 @@
+//kmp 활용했음 . 오랜만에 kmp 써서 헷갈려서 구글링함 . 
+
 import java.util.*;
+
 
 class Solution {
     
