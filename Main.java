@@ -8,7 +8,7 @@ public class Main {
         String[][] inf=new String[info.length][5];
         String[][] que=new String[query.length][5];
         
-      
+
         for(int i=0;i<info.length;i++){
             inf[i] = info[i].split(" ");
         }
@@ -39,7 +39,7 @@ public class Main {
         }
         for(int i=0;i<cnt;i++){
             Collections.sort(arr[i]);
-         }
+        }
         //-는 어떻게 처리하지???
         int[] answer= new int[que.length];
         for(int i=0;i<que.length;i++){//n logn ==> 이분탐색 
@@ -102,7 +102,7 @@ public class Main {
         if(left>right)return left;
         if(left>arr.size())return right;
         if(arr.get(mid)>=num){
-           return find(arr,num,left,mid-1); 
+            return find(arr,num,left,mid-1); 
         }
         return find(arr,num,mid+1,right);
     }
